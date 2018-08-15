@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
-#include <service_register.h>
-#include <update_server.h>
+#include "service_register.h"
+#include "update_server.h"
 
 void connectWifi(char* network_ssid, char* network_password) {
   while(WiFi.waitForConnectResult() != WL_CONNECTED){
