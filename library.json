@@ -6,7 +6,7 @@
         "type": "git",
         "url": "https://github.com/dawson-home-automation/firmware-base-nodemcu.git"
     },
-    "version": "0.2",
+    "version": "1.0",
     "frameworks": "arduino",
     "export": {
       "include": [
