@@ -1,0 +1,14 @@
+{
+    "name": "FirmwareBaseNodeMcu",
+    "keywords": "wifi, mqtt, iot, nodemcu, esp8266",
+    "description": "A base firmware that contains Wifi, Mqtt and UpdateServer implementations for NodeMcu",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dawson-home-automation/firmware-base-nodemcu.git"
+    },
+    "version": "0.1",
+    "frameworks": "arduino",
+    "platforms": [
+        "espressif"
+    ]
+}
