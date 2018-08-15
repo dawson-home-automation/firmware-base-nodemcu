@@ -1,5 +1,7 @@
 #include "mqtt_client.h"
 
+WiFiClient wifi;
+WiFiClientSecure wifi_secure;
 PubSubClient client;
 char* topic_subscribed;
 char* username;
@@ -13,10 +15,8 @@ void setupMQTT(char* mqtt_server,
                std::function<void(char*, uint8_t*, unsigned int)> callback) {
 
   if (secure) {
-    WiFiClientSecure wifi_secure;
     client.setClient(wifi_secure);
   } else {
-    WiFiClient wifi;
     client.setClient(wifi);
   }
 
