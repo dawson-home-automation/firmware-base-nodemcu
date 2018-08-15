@@ -8,12 +8,13 @@
     },
     "version": "0.2",
     "frameworks": "arduino",
-    "exclude": "src",
     "export": {
-    "include":
-        [
-            "lib/*"
-        ]
+      "include": [
+        "src/*"
+      ],
+      "exclude": [
+        "src/*.ino"
+      ]
     },
     "platforms": [
         "espressif"
